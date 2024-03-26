@@ -1,6 +1,9 @@
 pipeline{
     agent any
         stages{
-            stage(git checkout)
+            stage(git checkout){
+                git config --global user.name "afsar" 
+                git config --global user.email "afsarali.msit@gmail.com"
+            }
         }
 }
